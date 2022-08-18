@@ -32,7 +32,7 @@ def listing(key, value, format, meta):
 
         # we only need to add the caption, label is handled by Pandoc
         return \
-            [ Plain([latex(r'\begin{listing}' + '\n' + \
+            [ Plain([latex(r'\begin{listing}[h]' + '\n' + \
                            r'\caption{' + caption + '}')]) \
             , block \
             , Plain([latex(r'\end{listing}')]) \

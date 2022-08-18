@@ -3,6 +3,8 @@ title: Pandoc Filters for Scientific Writing
 author: Michael Färber
 ---
 
+> Selection of scripts used for [plaintext-science](https://github.com/edunfelt/plaintext-science).
+
 This package contains several filters for [Pandoc](https://pandoc.org/)
 to facilitate writing scientific texts.
 
@@ -45,26 +47,6 @@ The `linkref` filter renders links of the shape `[](#ref)`
 as intra-document references.
 In LaTeX, this is rendered as `\autoref{ref}`, whereas
 in HTML, this is rendered as `<a href="#ref">ref</a>`.
-
-
-# Tables
-
-The `tabular` filter renders LaTeX tables using the `tabular` package
-instead of the `longtable` package used by Pandoc by default.
-Unfortunately, we still have to use `\label` to reference tables.
-For a more complete solution, you may consider using something like
-[pandoc-tablenos](https://github.com/tomduck/pandoc-tablenos).
-
-An example is shown in [](#tab:example).
-
-Table: Demonstration of pipe table syntax.
-  \label{tab:example}
-
-| Right | Left | Default | Center |
-|------:|:-----|---------|:------:|
-|   12  |  12  |    12   |    12  |
-|  123  |  123 |   123   |   123  |
-|    1  |    1 |     1   |     1  |
 
 
 # Code Blocks {#listing}
